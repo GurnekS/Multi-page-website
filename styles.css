@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* this CSS file is used for all the pages on the tutoring site
+    Author:Gurnek Singh
+    Date:8/10/21
+    file name: styles.css
+ */
+html{
+    background-color: #e7c76f;
+    font-family: serif;
+}
+body{
+    background-color: #f3f3db;
+}
+
+ul li a{
+    color: white;
+}
+nav.horizontal, footer{
+    background-color: rgb(26,0,48);
+    color: lightblue;
+}
+footer{
+    text-align: center;
+    color: white;
+}
+
+/* vertical and horizontal navigation styles*/
+nav.vertical{
+    background-color: #6f99dd;
+}
+nav.vertical ul{
+    list-style: none;
+    font-size: 1em;
+}
+nav.horizontal{
+    text-align: center;
+
+}
+nav.vertical > ul > li > a{
+    text-decoration-line: none;
+    margin-left: 10px;
+    line-height: 2em;
+}
+ul.row > li > a{
+    text-decoration-line: none;
+    margin: 0 30px;
+}
+ul.row{
+    display: inline-flex;
+    list-style: none;
+    padding: 15px;
+    font-size: 1em;
+}
+footer{
+    font-size: 1em;
+    line-height: 2em;
+}

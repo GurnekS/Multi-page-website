@@ -1,0 +1,72 @@
+/* layout file for all pages to share this style and arrange the sections on the page
+    author: Gurnek Singh
+    date: 8/11/21
+    file name: layout.css
+ */
+body {
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 5fr 0fr 2fr;
+    grid-template-areas:
+            "logo logo vertnav"
+            "siden siden siden"
+            "main main main"
+            "foot foot foot";
+}
+
+nav.vertical { grid-area: vertnav; }
+nav.horizontal {grid-area: siden;}
+main {
+    grid-area: main;
+}
+
+footer { grid-area: foot; }
+
+img#logo{
+    grid-area: logo;
+    width: 100%;
+}
+/*horizontal navigation spacing for the texts*/
+body > nav.horizontal{
+    display: table;
+}
+body > nav.horizontal > ul{
+    display: table-row;
+    list-style-type: none;
+}
+body > nav.horizontal > ul > li {
+    display: table-cell;
+    text-align: center;
+}
+body > nav.horizontal a {
+    display: block;
+    width: 75%;
+}
+nav.horizontal{
+    padding: 8px 45px 8px 25px;
+}
+/*this is the shared table style for the hours and pricing pages*/
+table{
+    margin: 15px;
+}
+table, th, td{
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+table>tr>th{
+    text-align: center;
+}
+body tr:nth-of-type(odd) {
+    background-color: #e9e9f6;
+}
+tbody tr:nth-of-type(even) {
+    background-color: #bfbfd5;
+}
+table th{
+    background-color: rgb(26,0,48);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}

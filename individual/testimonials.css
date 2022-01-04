@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* testimonial CSS page
+    Author: gurnek Singh
+    Date: 8/13/21
+    filename: testimonials
+ */
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+aside p{
+    color: #5e3dad;
+    margin: 10px 0 0 0;
+}
+aside{
+    margin: 20px;
+}
+img{
+    margin-right: 15px;
+    float: left;
+}

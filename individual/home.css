@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*
+ this file is the layout sheet for the home page on the tutoring site
+    Author: Gurnek singh
+    Date: 8/11/21
+
+ */
+img{
+    width: 100px;
+}
+main section{
+    margin: 20px 10px;
+}
+main section p{
+    font-family: sans-serif;
+}
+section#img1{grid-area: pic1}
+section#img2{grid-area: pic2}
+section#img3{grid-area: pic3}
+section#img4{grid-area: pic4}
+
+main{
+    font-family: Serif;
+    font-size: .9em;
+    color: purple;
+    padding: 20px 60px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "pic1 pic2 pic3"
+        ".    pic4    .";
+}
+.img1{
+    margin-left: 45px;
+}
+.img3{
+    margin-left: 45px;
+
+}

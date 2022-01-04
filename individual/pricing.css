@@ -1,0 +1,43 @@
+@charset "utf-8";
+/*
+    this file is for tbe pricing page
+    Author: Gurnek Singh
+    date: 8/13/21
+    file name: pricing.css
+ */
+thead th:nth-child(2){
+    min-width: 100px;
+}
+
+thead th:last-child{
+    min-width: 175px;
+
+}
+aside{
+    margin: 15px;
+    padding: 10px;
+    background-color: #e3e097;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+aside p{
+    text-align: left;
+}
+aside ul{
+    list-style: inherit;
+    margin-left: 20px;
+
+}
+aside li{
+    margin-top: 15px;
+}
+aside ul li a{
+    color: #4c0293;
+    text-decoration-line: none;
+}
+main{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    justify-content: space-around;
+    margin: 20px;
+}

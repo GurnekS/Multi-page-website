@@ -1,0 +1,22 @@
+@charset"utf-8";
+/* this file is for the hours page
+    Author: gurnek Singh
+    Date: 8/10/21
+    file name: hours.css
+*/
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main p{
+    color: purple;
+}
+body tr:nth-of-type(odd) {
+    background-color: #e9e9f6;
+}
+tbody tr:nth-of-type(even) {
+    background-color: #bfbfd5;
+}
